@@ -1,0 +1,72 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);    
+    /*  */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /* fonts */
+    --big-shoulders-display: 'Big Shoulders Display', cursive;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 80rem;
+    height: 40rem;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--Very-light-gray);
+}
+.sedans {
+    background-color: var(--Bright-orange);
+}
+svg {
+    margin: 3rem 3rem 1rem 4rem;
+}
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+.abc > h2, p, button {
+    margin: 1rem 4rem;
+    font-size: 2rem;
+    font-family: var(--big-shoulders-display);
+}
+.abc p {
+    font-family: var(--lexend-deca);
+    font-size: 1.5rem;
+    color: var(--Transparent-white);
+}
+button {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--Bright-orange);
+    position: absolute;
+    bottom: 5rem;
+}
+.btn-suvs {
+    color: var(--Dark-cyan);
+}
+.btn-luxury {
+    color: var(--Very-dark-cyan)
+}
