@@ -36,14 +36,14 @@ body {
 .sedans {
     background-color: var(--Bright-orange);
 }
-svg {
-    margin: 3rem 3rem 1rem 4rem;
-}
 .suvs {
     background-color: var(--Dark-cyan);
 }
 .luxury {
     background-color: var(--Very-dark-cyan);
+}
+svg {
+    margin: 3rem 3rem 1rem 4rem;
 }
 .abc > h2, p, button {
     margin: 1rem 4rem;
@@ -69,4 +69,26 @@ button {
 }
 .btn-luxury {
     color: var(--Very-dark-cyan)
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    background: rgb(177, 177, 177);
+}
+@media (min-width: 374px) and (max-width: 700px) {
+    .container {
+        width: 27rem;
+        height: 57rem;
+        flex-direction: column;
+    }
+    .abc > h2, p, button {
+        font-size: 3rem;
+    }
+    .abc button {
+        position: relative;
+        top: 1rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
 }
