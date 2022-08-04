@@ -76,7 +76,7 @@ button:hover {
 button:active {
     background: rgb(177, 177, 177);
 }
-@media (min-width: 374px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
     .container {
         width: 27rem;
         height: 57rem;
